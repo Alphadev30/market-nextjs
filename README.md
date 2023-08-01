@@ -1,11 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Market Project API</title>
-</head>
-
-<body>
 
     <h1>Market Project API</h1>
 
@@ -41,7 +33,3 @@
     <img src="./images/postman_screenshot_2.png" alt="Postman Screenshot 2" />
     <img src="./images/postman_screenshot_3.png" alt="Postman Screenshot 3" />
     <img src="./images/postman_screenshot_4.png" alt="Postman Screenshot 4" />
-
-</body>
-
-</html>
