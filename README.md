@@ -1,35 +1,30 @@
+# Market Project API
 
-    <h1>Market Project API</h1>
+## How to Start and Run the Project
 
-    <h2>How to Start and Run the Project</h2>
-    <p>To start and run the project, follow these steps:</p>
-    <ol>
-        <li>Clone the repository to your local machine.</li>
-        <li>Install the required dependencies by running <code>npm install</code> in the project directory.</li>
-        <li>Start the development server by running <code>npm run dev</code>.</li>
-    </ol>
+To start and run the project, follow these steps:
 
-    <br>
+1. Clone the repository to your local machine.
+2. Install the required dependencies by running `npm install` in the project directory.
+3. Start the development server by running `npm run dev`.
 
-    <h2>APIs</h2>
-    <p>The following APIs have been created:</p>
-    <ul>
-        <li><strong>GET /api/company</strong>: Get announcements for a specific company (stock) based on the SCRIP_CD
-            parameter. Example: <a href="http://localhost:3000/api/company?SCRIP_CD=532285">http://localhost:3000/api/company?SCRIP_CD=532285</a>
-        </li>
-        <li><strong>GET /api/critical</strong>: Get critical announcements for all companies. Example: <a
-                href="http://localhost:3000/api/critical">http://localhost:3000/api/critical</a></li>
-        <li><strong>GET /api/period</strong>: Get announcements within a specified date range using the startDate and
-            endDate parameters. Example: <a
-                href="http://localhost:3000/api/period?startDate=2023-07-26&endDate=2023-07-27">http://localhost:3000/api/period?startDate=2023-07-26&endDate=2023-07-27</a>
-        </li>
-        <li><strong>GET /api/recent</strong>: Get announcements from the past 1-2 days in descending time order.
-            Example: <a href="http://localhost:3000/api/recent">http://localhost:3000/api/recent</a></li>
-    </ul>
-    <br>
-    <h2>Postman Screenshots</h2>
-    <p>Here are the Postman screenshots for the APIs:</p>
-    <img src="./images/postman_screenshot_1.png" alt="Postman Screenshot 1" />
-    <img src="./images/postman_screenshot_2.png" alt="Postman Screenshot 2" />
-    <img src="./images/postman_screenshot_3.png" alt="Postman Screenshot 3" />
-    <img src="./images/postman_screenshot_4.png" alt="Postman Screenshot 4" />
+## APIs
+
+The following APIs have been created:
+
+- **GET /api/company**: Get announcements for a specific company (stock) based on the SCRIP_CD parameter. Example: [http://localhost:3000/api/company?SCRIP_CD=532285](http://localhost:3000/api/company?SCRIP_CD=532285)
+
+- **GET /api/critical**: Get critical announcements for all companies. Example: [http://localhost:3000/api/critical](http://localhost:3000/api/critical)
+
+- **GET /api/period**: Get announcements within a specified date range using the startDate and endDate parameters. Example: [http://localhost:3000/api/period?startDate=2023-07-26&endDate=2023-07-27](http://localhost:3000/api/period?startDate=2023-07-26&endDate=2023-07-27)
+
+- **GET /api/recent**: Get announcements from the past 1-2 days in descending time order. Example: [http://localhost:3000/api/recent](http://localhost:3000/api/recent)
+
+## Postman Screenshots
+
+Here are the Postman screenshots for the APIs:
+
+![Postman Screenshot 1](./images/postman_screenshot_1.png)
+![Postman Screenshot 2](./images/postman_screenshot_2.png)
+![Postman Screenshot 3](./images/postman_screenshot_3.png)
+![Postman Screenshot 4](./images/postman_screenshot_4.png)
