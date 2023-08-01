@@ -31,7 +31,7 @@ export default async function handler(req, res) {
 
             // Find announcements with News_submission_dt between startDate and endDate
             const announcements = await AnnouncementsModel.find({
-                News_submission_dt: { $gte: modstartDateObj, $lte: modendDateObj },
+                NEWS_DT: { $gte: modstartDateObj, $lte: modendDateObj },
             });
 
             // Log the fetched announcements for debugging

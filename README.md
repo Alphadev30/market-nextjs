@@ -1,34 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!DOCTYPE html>
+<html>
 
-## Getting Started
+<head>
+    <title>Market Project API</title>
+</head>
 
-First, run the development server:
+<body>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+    <h1>Market Project API</h1>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    <h2>How to Start and Run the Project</h2>
+    <p>To start and run the project, follow these steps:</p>
+    <ol>
+        <li>Clone the repository to your local machine.</li>
+        <li>Install the required dependencies by running <code>npm install</code> in the project directory.</li>
+        <li>Start the development server by running <code>npm run dev</code>.</li>
+    </ol>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+    <br>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    <h2>APIs</h2>
+    <p>The following APIs have been created:</p>
+    <ul>
+        <li><strong>GET /api/company</strong>: Get announcements for a specific company (stock) based on the SCRIP_CD
+            parameter. Example: <a href="http://localhost:3000/api/company?SCRIP_CD=532285">http://localhost:3000/api/company?SCRIP_CD=532285</a>
+        </li>
+        <li><strong>GET /api/critical</strong>: Get critical announcements for all companies. Example: <a
+                href="http://localhost:3000/api/critical">http://localhost:3000/api/critical</a></li>
+        <li><strong>GET /api/period</strong>: Get announcements within a specified date range using the startDate and
+            endDate parameters. Example: <a
+                href="http://localhost:3000/api/period?startDate=2023-07-26&endDate=2023-07-27">http://localhost:3000/api/period?startDate=2023-07-26&endDate=2023-07-27</a>
+        </li>
+        <li><strong>GET /api/recent</strong>: Get announcements from the past 1-2 days in descending time order.
+            Example: <a href="http://localhost:3000/api/recent">http://localhost:3000/api/recent</a></li>
+    </ul>
+    <br>
+    <h2>Postman Screenshots</h2>
+    <p>Here are the Postman screenshots for the APIs:</p>
+    <img src="./images/postman_screenshot_1.png" alt="Postman Screenshot 1" />
+    <img src="./images/postman_screenshot_2.png" alt="Postman Screenshot 2" />
+    <img src="./images/postman_screenshot_3.png" alt="Postman Screenshot 3" />
+    <img src="./images/postman_screenshot_4.png" alt="Postman Screenshot 4" />
 
-## Learn More
+</body>
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+</html>

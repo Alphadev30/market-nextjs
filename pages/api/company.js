@@ -6,6 +6,7 @@ import AnnouncementsModel from '../../data-processing/models/AnnouncementModel';
 // Connect to the MongoDB database
 connectDB();
 
+// Handles incoming HTTP requests and generates HTTP responses
 export default async function handler(req, res) {
   const { method, query } = req;
 
